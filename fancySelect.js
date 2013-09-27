@@ -36,6 +36,8 @@
         wrapper.addClass('disabled');
       }
       updateTriggerText = function() {
+        // Adds a different clase name on the trigger element accroding to it's value
+      	trigger[0].className = "trigger " + sel.find(':selected').text() + 'Status';
         return trigger.text(sel.find(':selected').text());
       };
       sel.on('blur', function() {
