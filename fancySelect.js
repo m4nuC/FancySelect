@@ -146,7 +146,7 @@
       options.on('click', 'li', function(e) {
         options.find('.selected').removeClass('selected');
         $(e.currentTarget).addClass('selected');
-        return sel.val($(this).data('value')).trigger('change').trigger('blur').trigger('focus');
+        return sel.val($(this).data('value')).trigger('blur').trigger('focus');
       });
       options.on('mouseenter', 'li', function() {
         var hovered, nowHovered;
